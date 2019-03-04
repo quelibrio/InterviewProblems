@@ -16,6 +16,7 @@ public:
 	TEST_METHOD_CLEANUP(clenUp)
 	{
 		m_s->clear();
+		delete m_s;
 	}
 
 	TEST_METHOD(testMedianOneBigNumber)
