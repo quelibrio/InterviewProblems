@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/quelibrio/Deep Learning/InterviewProblems/CMakeVersion/mean_structure.cpp
+queue
+-
+functional
+-
+iostream
+-
+cmath
+-
+mean_structure.h
+/home/quelibrio/Deep Learning/InterviewProblems/CMakeVersion/mean_structure.h
+
+/home/quelibrio/Deep Learning/InterviewProblems/CMakeVersion/mean_structure.h
+

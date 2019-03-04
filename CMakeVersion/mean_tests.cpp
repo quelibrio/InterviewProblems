@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "CppUnitTest.h"
 #include "../MeanCalculatingStructure/mean_structure.cpp"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;

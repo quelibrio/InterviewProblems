@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/quelibrio/Deep Learning/InterviewProblems/CMakeVersion/mean_tests.cpp
+CppUnitTest.h
+/home/quelibrio/Deep Learning/InterviewProblems/CMakeVersion/CppUnitTest.h
+../MeanCalculatingStructure/mean_structure.cpp
+/home/quelibrio/Deep Learning/InterviewProblems/MeanCalculatingStructure/mean_structure.cpp
+

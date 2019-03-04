@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <queue>
 #include <functional>
 #include <iostream>
