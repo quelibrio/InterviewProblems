@@ -4,35 +4,33 @@
 #include <iostream>
 #include <cmath> 
 #include "mean_structure.h"
-
 using namespace std;
-//
-//class mean_structure
-//{
-//public:
-//	mean_structure();
-//	void insert(double n);
-//	double get_median();
-//};
 
+const double not_a_number = (-1.0)*(2 ^ 31);
 // Creates a maximum order heap 
 priority_queue <double> max_pq;
 // creates a minimum order heap with the generic constructor
 priority_queue <double, vector<double>, greater<double>> min_pq;
-
-//mean_structure::mean_structure()
-//{
-//}
 
 bool mean_structure::is_empty()
 {
 	return max_pq.size() == 0 && min_pq.size() == 0;
 }
 
+void mean_structure::clear()
+{
+	max_pq = priority_queue<double>();
+	min_pq = priority_queue<double, vector<double>, greater<double>>();
+}
+
 double mean_structure::get_median()
 {
+	if(max_pq.size() == 0 && min_pq.size() == 0)
+	{
+		return not_a_number;
+	}
 	//if total size is even, then median is the 2 middle elements' average
-	if (max_pq.size() == min_pq.size())
+	else if (max_pq.size() == min_pq.size())
 	{
 		return (max_pq.top() + min_pq.top()) / 2;
 	}
@@ -98,6 +96,6 @@ int main()
 	structure->insert(89);
 	structure->insert(91);
 	cout << structure->get_median();
-
+	//First run -> median should be 90
 	return 0;
 }

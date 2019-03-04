@@ -8,5 +8,5 @@
 		//mean_structure();
 		void insert(double n);
 		double get_median();
-		
+		void clear();
 	};
