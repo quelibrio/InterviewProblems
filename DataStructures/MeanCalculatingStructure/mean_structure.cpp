@@ -4,9 +4,9 @@
 #include <iostream>
 #include <cmath> 
 #include "mean_structure.h"
+const double not_a_number = (-1.0)*(2 ^ 31);
 using namespace std;
 
-const double not_a_number = (-1.0)*(2 ^ 31);
 // Creates a maximum order heap 
 priority_queue <double> max_pq;
 // creates a minimum order heap with the generic constructor
